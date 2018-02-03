@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+    function myFunction() {
+        var nums = [2,2,1,-2,-4,0];
+        var firstNum = nums[Math.floor((Math.random() * 5))];
+        var secondNum =nums[ Math.floor((Math.random() * 5))];
+        var thirdNum = nums[Math.floor((Math.random() * 5))];
+
+        document.getElementById("text1").innerHTML = firstNum;
+        document.getElementById("text2").innerHTML = secondNum;
+        document.getElementById("text3").innerHTML = thirdNum;
+    }
+</script>
+
+<body onload="myFunction()">
+    <h1>dice 1: <span id="text1"></span></h1>
+    <h1>dice 2: <span id="text2"></span></h1>
+    <h1>dice 3: <span id="text3"></span></h1>
+</body>
+</html>
